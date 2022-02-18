@@ -51,6 +51,8 @@ for match in range(100):
         y-=1
 print("Στην σκακιέρα 8x8, σε 100 παιχνίδια ο πύργος απέκτησε {} πόντους, ενώ ο αξιωματικός {}".format(len(tower_points),len(soldier_points)))
 
+tower_points = []
+soldier_points = []
 for match in range(100):
     square = [[0 for i in range(7)] for j in range(7)]
     tower_coordinates = []
@@ -98,6 +100,8 @@ for match in range(100):
         y-=1
 print("Στην σκακιέρα 7x7, σε 100 παιχνίδια ο πύργος απέκτησε {} πόντους, ενώ ο αξιωματικός {}".format(len(tower_points),len(soldier_points)))
 
+tower_points = []
+soldier_points = []
 for match in range(100):
     square = [[0 for i in range(8)] for j in range(7)]
     tower_coordinates = []
@@ -120,6 +124,7 @@ for match in range(100):
     for i in range(7):
         if square[i][tower_coordinates[1]] == 2:
             tower_points.append(1)
+    for i in range(8):
         if square[tower_coordinates[0]][i] == 2:
             tower_points.append(1)
 
